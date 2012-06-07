@@ -3,19 +3,44 @@
 </head>
 
 <body>
-  {{> hello}}
+<div class="container">
+  {{> navbar}}
+  <header>
+    <h1>ogaoga's lab on Meteor</h1>
+    <p>description description description description description description description description description description description description description description description description description </p>
+  </header>
+  <article>
+    {{> hello}}
+  </article>
+</div>
 </body>
 
+
 <template name="hello">
-  <div class="hello">
-    <h1>ogaoga's lab on Meteor</h1>
+<div class="row-fluid">
+  <div class="span4 offset2">
+    <h2>test1</h2>
     {{greeting}}
     <!-- <input type="button" value="Click" /> -->
     <p>Under construction.</p>
-
-{{#markdown}}
-# h1 in Markdown
-{{/markdown}}
-
   </div>
+  <div class="span4">
+    <h2>test2</h2>
+    <p>text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text </p>
+  </div>
+  <div class="span4">
+    <h2>test3</h2>
+    <p>text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text </p>
+  </div>
+</div>
+</template>
+
+<template name="navbar">
+<div class="navbar navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container">
+      <a class="brand" href="#">Project name</a>
+    </div>
+  </div>
+</div>
 </template>
