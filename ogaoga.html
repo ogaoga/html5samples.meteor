@@ -12,6 +12,9 @@
   <article>
     {{> home}}
   </article>
+  <footer>
+    {{> footer}}
+  </footer>
 </div>
 </body>
 
@@ -20,38 +23,101 @@
 <div class="row-fluid">
   <div class="span3">
     <h2>{{> icon-semantics}} Semantics</h2>
-    <!-- <input type="button" value="Click" /> -->
-    <p>Under construction.</p>
+    <ul>
+      <li>Structural Elements</li>
+      <li>Form Types</li>
+      <li>New Attributes</li>
+      <li>Media Elements</li>
+      <li>Microdata</li>
+      <li>Link relation types</li>
+      <li>I18n</li>
+    </ul>
   </div>
   <div class="span3">
     <h2><a href="#css">{{> icon-css-styling}} CSS Styling</a></h2>
-    <p>text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text </p>
+    <ul>
+      <li>Flex Box Model</li>
+      <li>Transitions</li>
+      <li>2D/3D Transforms</li>
+      <li>Animations</li>
+      <li>Web Fonts</li>
+      <li>Media Queries</li>
+    </ul>
   </div>
   <div class="span3">
     <h2>{{> icon-3d-effects}} 3D, Graphics & Effects</h2>
-    <p>text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text </p>
+    <ul>
+      <li>Canvas</li>
+      <li>SVG</li>
+      <li>3D CSS Transform</li>
+      <li>Web GL</li>
+      <li>SMIL</li>
+    </ul>
   </div>
   <div class="span3">
     <h2>{{> icon-multimedia}} Multimedia</h2>
-    <p>text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text </p>
+    <ul>
+      <li>&lt;audio&gt;</li>
+      <li>&lt;video&gt;</li>
+      <li>Web Audio API</li>
+      <li>Audio Data API</li>
+    </ul>
   </div>
 </div>
 <div class="row-fluid">
   <div class="span3">
     <h2>{{> icon-offline-storage}} Offline & Storage</h2>
-    <p>text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text </p>
+    <ul>
+      <li>File API</li>
+      <li>Web Storage</li>
+	    <li>IndexedDB</li>
+	    <li>Application Cache</li>
+	    <li>Online/Offline Events</li>
+      <li>Quota API</li>
+    </ul>
   </div>
   <div class="span3">
-    <h2>{{> icon-device-access}} Device Access</h2>
-    <p>text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text </p>
+    <h2>{{> icon-device-access}} File & Device Access</h2>
+    <ul>
+      <li>File API</li>
+      <li>FileReader API</li>
+      <li>FileSystem & FileWriter API</li>
+      <li>Blob Builder API</li>
+      <li>Blob URLs</li>
+      <li>Geolocation API</li>
+      <li>Device Orientation</li>
+      <li>Audio/Video input access</li>
+      <li>Battery Status API</li>
+    </ul>
   </div>
   <div class="span3">
     <h2>{{> icon-connectivity}} Connectivity</h2>
-    <p>text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text </p>
+    <ul>
+      <li>Web Sockets</li>
+      <li>Server Sent Events</li>
+    </ul>
   </div>
   <div class="span3">
     <h2>{{> icon-performance-integration}} Performance & Integration</h2>
-    <p>text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text </p>
+    <ul>
+      <li>HTTP Caching</li>
+      <li>Web Workers</li>
+    </ul>
   </div>
 </div>
+</template>
+
+<template name="footer">
+<hr />
+<p>
+Designed by Tsutomu Ogasawara / @ogaoga 
+</p>
+<p>
+Powered by Meteor / Twitter Bootstrap
+</p>
+<p>
+Source code on GitHub
+<iframe src="http://markdotto.github.com/github-buttons/github-btn.html?user=ogaoga&repo=html5samples.meteor&type=watch&count=true"
+  allowtransparency="true" frameborder="0" scrolling="0" width="112px" height="20px"></iframe>
+</p>
 </template>
