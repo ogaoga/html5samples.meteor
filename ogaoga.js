@@ -11,6 +11,9 @@ if (Meteor.is_client) {
       if ( actions == 'css' ) {
         $('article').html(Template.section_css());
       }
+      else if ( actions == 'glossary' ) {
+        $('article').html(Template.glossary());
+      }
       else {
         $('article').html(Template.home());
       }
