@@ -12,6 +12,9 @@
   <article>
     {{> home}}
   </article>
+  <nav>
+    {{> breadcrumbs}}
+  </nav>
   <footer>
     {{> footer}}
   </footer>
@@ -110,13 +113,15 @@
 <template name="footer">
 <hr />
 <p>
-Designed by Tsutomu Ogasawara / @ogaoga 
+Designed by Tsutomu Ogasawara / <a href="http://twitter.com/ogaoga">@ogaoga</a>
 </p>
 <p>
-Powered by Meteor / Twitter Bootstrap
+Powered by <a href="http://meteor.com/">Meteor</a> / 
+<a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap</a>
 </p>
 <p>
-Source code on GitHub
+The source code on <a href="https://github.com/ogaoga/html5samples.meteor">GitHub</a>
+<br />
 <iframe src="http://markdotto.github.com/github-buttons/github-btn.html?user=ogaoga&repo=html5samples.meteor&type=watch&count=true"
   allowtransparency="true" frameborder="0" scrolling="0" width="112px" height="20px"></iframe>
 </p>
