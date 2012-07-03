@@ -1,0 +1,15 @@
+<template name="breadcrumbs">
+  <ul class="breadcrumb">
+    {{#each pages}}
+    <li>
+      <a href="#{{path}}">{{label}}</a> <span class="divider">/</span>
+    </li>
+    {{/each}}
+    <!--
+    <li>
+      <a href="#">Library</a> <span class="divider">/</span>
+    </li>
+    <li class="active">Data</li>
+    -->
+  </ul>
+</template>
